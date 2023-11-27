@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_ver_estoque.css') }}">
+</head>
+
+<body onload="carregarDados()">
+
+    <div class="container">
+        <div>
+            <a href="/relatorio" class="container__titulo__home">ESTOQUE</a>
+            <ul class="container__lateral">
+                <li><a class="container__lateral__botoes" href="/relatorio" >Relatorio</a></li>
+                <li><a class="container__lateral__botoes" href="/ver_estoque" >Ver estoque</a></li>
+                <li><a class="container__lateral__botoes" href="/add_rmv" >Add/Rmv</a></li>
+                <li><a class="container__lateral__botoes" href="/add_item" >Adicionar item</a></li>
+                <li><a class="container__lateral__botoes" href="/rmv_item" >Remover item</a></li>
+                <li><a class="container__lateral__botoes" href="/editar_item" >Editar item</a></li>
+                <!--<li><a class="container__lateral__botoes" href="/cadastrar_login" >Cadastrar login</a></li> -->
+                <li><a class="container__lateral__botoes" href="/logout">Sair</a></li>
+            </ul>
+        </div>
+        <div class="container__separator"></div>
+
+        <div class="container__conteudo">
+
+            <div>
+                <p>Ver informações:</p>
+                <form class="container_pesquisa" action="/cadastrar_nota/{{ id_item }}" method="POST">
+                    <button type="submit" class="button_pesquisa">Cadastrar Nota</button>
+                </form>
+
+                <form class="container_pesquisa" method="POST" action="/excluir_nota">
+                    <input class="input_pesquisa" name="input_nota" placeholder="N° da Nota" required>
+                    <button type="submit" class="button_pesquisa">Excluir nota</button>
+                </form>
+            </div>
+            <form class="container_pesquisa" method="POST" action="/ver_estoque_notas_pesquisa">
+                <input class="input_pesquisa" name="input_pesquisa" placeholder="Pesquisa...">
+                <button type="submit" class="button_pesquisa">Pesquisar</button>
+            </form>
+
+            <div class="container__conteudo__tabela">
+                <table class="tabela">
+                <thead>
+                    <tr>
+                        <th class="tabela_header">Item</th>
+                        <th class="tabela_header">Fornecedor</th>
+                        <th class="tabela_header">Nota</th>
+                        <th class="tabela_header">Data</th>
+                        <th class="tabela_header">Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for notas in notas %}
+                    <tr>
+                        <td class="tabela_body">{{ notas.Item }}</td>
+                        <td class="tabela_body">{{ notas.Fornecedor }}</td>
+                        <td class="tabela_body">{{ notas.Nota }}</td>
+                        <td class="tabela_body">{{ notas.Data }}</td>
+                        <td class="tabela_body">{{ notas.Preco }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

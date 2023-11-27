@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_ver_estoque.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <a href="/a_relatorio" class="container__titulo__home">ESTOQUE</a>
+            <ul class="container__lateral">
+                <li><a class="container__lateral__botoes" href="/a_relatorio" >Relatorio</a></li>
+                <li><a class="container__lateral__botoes" href="/a_ver_estoque" >Ver estoque</a></li>
+                <li><a class="container__lateral__botoes" href="/a_add_rmv" >Add/Rmv</a></li>
+                <li><a class="container__lateral__botoes" href="/logout">Sair</a></li>
+            </ul>
+        </div>
+        <div class="container__separator"></div>
+
+        <div class="container__conteudo">
+            <form class="container_pesquisa" method="POST" action="/a_ver_estoque_pesquisa">
+                <input class="input_pesquisa" name="input_pesquisa" placeholder="Pesquisa...">
+                <button type="submit" class="button_pesquisa">Pesquisar</button>
+            </form>
+
+            <div class="container__conteudo__tabela">
+                <table class="tabela">
+                <thead>
+                    <tr>
+                        <th class="tabela_header">Id</th>
+                        <th class="tabela_header">Nome</th>
+                        <th class="tabela_header">Quantidade</th>
+                        <th class="tabela_header">Quantidade Mínima</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in dados %}
+                    <tr class="{% if item.Quantidade < item.QuantidadeMinima %}linha-vermelha {%elif item.Quantidade <= 1.2 * item.QuantidadeMinima %}linha-amarela {% endif %}">
+                        <td class="tabela_body">{{ item.Id }}</td>
+                        <td class="tabela_body">{{ item.Nome }}</td>
+                        <td class="tabela_body">{{ item.Quantidade }} {{ item.Unidade }}</td>
+                        <td class="tabela_body">{{ item.QuantidadeMinima }} {{ item.Unidade }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

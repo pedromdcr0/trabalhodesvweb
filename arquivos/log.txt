@@ -1,0 +1,20 @@
+Mon Nov 27 17:04:58 2023 - CADASTRO - {'Id': 4, 'Nome': 'PAPEL A4 BRANCO', 'Quantidade': 500, 'QuantidadeMinima': 100, 'Unidade': 'UND', '_id': ObjectId('6564f66a8fad638d64817eaa')} - POR admin
+Mon Nov 27 17:05:13 2023 - CADASTRO - {'Id': 5, 'Nome': 'CANETA PRETA', 'Quantidade': 200, 'QuantidadeMinima': 50, 'Unidade': 'UND', '_id': ObjectId('6564f6798fad638d64817eab')} - POR admin
+Mon Nov 27 17:05:28 2023 - CADASTRO - {'Id': 6, 'Nome': 'TONER IMPRESSORA', 'Quantidade': 10, 'QuantidadeMinima': 2, 'Unidade': 'UND', '_id': ObjectId('6564f6888fad638d64817eac')} - POR admin
+Mon Nov 27 17:05:39 2023 - CADASTRO - {'Id': 7, 'Nome': 'CADERNOS', 'Quantidade': 100, 'QuantidadeMinima': 20, 'Unidade': 'UND', '_id': ObjectId('6564f6938fad638d64817ead')} - POR admin
+Mon Nov 27 17:05:52 2023 - CADASTRO - {'Id': 8, 'Nome': 'MOUSES', 'Quantidade': 30, 'QuantidadeMinima': 4, 'Unidade': 'UND', '_id': ObjectId('6564f6a08fad638d64817eae')} - POR admin
+Mon Nov 27 17:06:00 2023 - CADASTRO - {'Id': 9, 'Nome': 'TECLADOS', 'Quantidade': 30, 'QuantidadeMinima': 5, 'Unidade': 'UND', '_id': ObjectId('6564f6a88fad638d64817eaf')} - POR admin
+Mon Nov 27 17:06:13 2023 - CADASTRO - {'Id': 10, 'Nome': 'MONITORES', 'Quantidade': 30, 'QuantidadeMinima': 5, 'Unidade': 'UND', '_id': ObjectId('6564f6b58fad638d64817eb0')} - POR admin
+Mon Nov 27 17:06:32 2023 - CADASTRO - {'Id': 11, 'Nome': 'MESAS', 'Quantidade': 50, 'QuantidadeMinima': 30, 'Unidade': 'UND', '_id': ObjectId('6564f6c88fad638d64817eb1')} - POR admin
+Mon Nov 27 17:06:52 2023 - CADASTRO - {'Id': 12, 'Nome': 'COMPUTADORES', 'Quantidade': 30, 'QuantidadeMinima': 5, 'Unidade': 'UND', '_id': ObjectId('6564f6dc8fad638d64817eb2')} - POR admin
+Mon Nov 27 17:07:16 2023 - CADASTRO - {'Id': 13, 'Nome': 'FITAS ADESIVAS', 'Quantidade': 100, 'QuantidadeMinima': 90, 'Unidade': 'UND', '_id': ObjectId('6564f6f48fad638d64817eb3')} - POR admin
+Mon Nov 27 17:07:28 2023 - CADASTRO - {'Id': 14, 'Nome': 'TESOURAS', 'Quantidade': 30, 'QuantidadeMinima': 15, 'Unidade': 'UND', '_id': ObjectId('6564f7008fad638d64817eb4')} - POR admin
+Mon Nov 27 17:07:50 2023 - CADASTRO - {'Id': 15, 'Nome': 'PILHAS AA', 'Quantidade': 200, 'QuantidadeMinima': 180, 'Unidade': 'UND', '_id': ObjectId('6564f7168fad638d64817eb5')} - POR admin
+Mon Nov 27 17:08:08 2023 - CADASTRO - {'Id': 16, 'Nome': 'ALCOOL EM GEL', 'Quantidade': 60, 'QuantidadeMinima': 12, 'Unidade': 'LITROS', '_id': ObjectId('6564f7288fad638d64817eb6')} - POR admin
+Mon Nov 27 17:08:21 2023 - CADASTRO - {'Id': 17, 'Nome': 'CABOS USB', 'Quantidade': 50, 'QuantidadeMinima': 10, 'Unidade': 'UND', '_id': ObjectId('6564f7358fad638d64817eb7')} - POR admin
+Mon Nov 27 17:08:49 2023 - CADASTRO - {'Id': 18, 'Nome': 'CABOS DE REDE', 'Quantidade': 100, 'QuantidadeMinima': 40, 'Unidade': 'UND', '_id': ObjectId('6564f7518fad638d64817eb8')} - POR admin
+Mon Nov 27 17:08:58 2023 - REMOVIDO DO CADASTRO - {'_id': ObjectId('6564eeb62efde2d709eb2c15'), 'Id': 1, 'Nome': 'FARINHA', 'Quantidade': 200, 'QuantidadeMinima': 20, 'Unidade': 'KG'} - POR: admin
+Mon Nov 27 17:08:59 2023 - REMOVIDO DO CADASTRO - {'_id': ObjectId('6564f3af67b58066f57ab29a'), 'Id': 1, 'Nome': 'GELO', 'Quantidade': 10, 'QuantidadeMinima': 20, 'Unidade': 'KG'} - POR: admin
+Mon Nov 27 17:09:01 2023 - REMOVIDO DO CADASTRO - {'_id': ObjectId('6564f3b867b58066f57ab29b'), 'Id': 1, 'Nome': 'GELO EM CUBOS', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'CUBOS'} - POR: admin
+Mon Nov 27 17:23:57 2023 - SOMADO NO ESTOQUE (200) - {'_id': ObjectId('6564f66a8fad638d64817eaa'), 'Id': 1, 'Nome': 'PAPEL A4 BRANCO', 'Quantidade': 500, 'QuantidadeMinima': 100, 'Unidade': 'UND'} - POR: admin
+Mon Nov 27 17:24:02 2023 - SUBTRAIDO NO ESTOQUE (200) - {'_id': ObjectId('6564f66a8fad638d64817eaa'), 'Id': 1, 'Nome': 'PAPEL A4 BRANCO', 'Quantidade': 700, 'QuantidadeMinima': 100, 'Unidade': 'UND'} - POR: admin
